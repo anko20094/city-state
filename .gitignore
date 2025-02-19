@@ -19,3 +19,4 @@ db/countries.yml
 .env
 examples/.bundle/
 Gemfile.lock
+.idea/

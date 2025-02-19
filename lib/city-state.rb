@@ -67,7 +67,7 @@ module CS
     @countries = {}
     @states = {}
     @cities = {} # invalidades cache
-    File.delete COUNTRIES_FN # force countries.yml to be generated at next call of CS.countries
+    File.delete COUNTRIES_FN if File.exist? COUNTRIES_FN # force countries.yml to be generated at next call of CS.countries
     true
   end
 
